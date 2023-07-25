@@ -1140,6 +1140,7 @@ footer {
 
 .parallax_extra {
   background-image: url(../imagenes/parallax.png);
+  background-size: cover;
   background-position: center;
   height: 400px;
   margin-top: -20px;
@@ -1464,6 +1465,7 @@ footer {
 .parallax_uno_contacto {
   background-image: url(../imagenes/parallax.png);
   background-position: center;
+  background-size: cover;
   height: 400px;
   margin-top: 10px;
   background-attachment: fixed;
