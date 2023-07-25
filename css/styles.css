@@ -85,7 +85,7 @@ header nav {
 }
 nav .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .menu li {
@@ -924,7 +924,7 @@ nav i {
 .datos_contacto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .datos_contacto p {
@@ -1140,6 +1140,7 @@ footer {
 
 .parallax_extra {
   background-image: url(../imagenes/parallax.png);
+  background-size: cover;
   background-position: center;
   height: 400px;
   margin-top: -20px;
@@ -1464,6 +1465,7 @@ footer {
 .parallax_uno_contacto {
   background-image: url(../imagenes/parallax.png);
   background-position: center;
+  background-size: cover;
   height: 400px;
   margin-top: 10px;
   background-attachment: fixed;
@@ -1630,7 +1632,7 @@ footer {
     background-color: #002c89;
     width: 100%;
     top: 55px;
-    height: 50vh;
+    height: 100vh;
     left: -100%;
     transition: 1s;
     z-index: 999;
@@ -1639,9 +1641,16 @@ footer {
     left: 0;
     transition: 1s;
   }
+  .menu li:nth-child(1) {
+    margin-top: 50px;
+  }
   .menu li {
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
     list-style: none;
+  }
+  .flags {
+    margin-top: 30px;
   }
   .menu li a {
     font-size: 17px;
@@ -2464,6 +2473,9 @@ footer {
   }
   .menu {
     top: 55px;
+  }
+  .mobile{
+    height: 100%;
   }
   .contenido_post p {
     color: #fff;
