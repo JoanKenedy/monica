@@ -1,0 +1,92 @@
+body {
+  font-family: "Play", sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.container-carillas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-carillas .video {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.container-carillas .video-mov {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt { 
+  position: absolute;
+  top: 200px;
+  font-weight: bold;
+  font-size: 1.9em;
+  color: rgba(255,255,255,0.8);
+}
+.carillas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4% 7% 7% 7%;
+}
+.carillas h1 {
+  margin-bottom: 20px;
+}
+.title-carillas {
+  background-color: #781658;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-carillas h2 {
+  color: white;
+}
+.tipos-carillas h3 {
+  margin-top: 20px;
+  padding: 0 7%;
+}
+.grid-carillas {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-carillas .item-carillas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.grid-carillas .item-carillas img {
+  width: 70px;
+}
+.grid-carillas .item-carillas h3 {
+  color: #1161a0;
+}
+.grid-carillas .item-carillas p {
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .container-carillas .video {
+    display: flex;
+  }
+  .container-carillas .video-mov {
+    display: none;
+  }
+  .txt {
+    top: initial;
+    font-size: 3em;
+  }
+  .grid-carillas {
+    grid-template-columns: repeat(2, 
+    minmax(200px, 450px));
+    gap: 20px;
+  }
+}
