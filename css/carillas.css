@@ -47,10 +47,14 @@ body {
 }
 .title-carillas h2 {
   color: white;
+  padding: 0 10px;
 }
 .tipos-carillas h3 {
   margin-top: 20px;
   padding: 0 7%;
+}
+.tipos-carillas {
+  margin-top: 20px;
 }
 .grid-carillas {
   display: grid;
@@ -72,8 +76,38 @@ body {
 .grid-carillas .item-carillas p {
   text-align: justify;
 }
-
+.carillas-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dbd5d585;
+  width: 100%;
+}
+.carillas ul {
+  list-style:square;
+  padding: 3% 6% 6% 6%;
+}
+.promo-mov {
+  width: 100%;
+}
+.promo {
+  display: none;
+}
 @media (min-width: 768px) {
+  .promo-mov {
+    display: none;
+  }
+  .promo {
+    display: block;
+    width: 100%;
+  }
+  .h2-carillas {
+    font-size: 1.7em;
+  }
+  .carillas p {
+    font-size: 1.4em;
+  }
   .container-carillas .video {
     display: flex;
   }

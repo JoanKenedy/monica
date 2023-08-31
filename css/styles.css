@@ -344,6 +344,9 @@ nav i {
   z-index: 1;
   top: auto;
 }
+.container-promos {
+  margin: 0;
+}
 .miSlider {
   position: relative;
 }
@@ -920,6 +923,9 @@ nav i {
   flex-wrap: wrap;
   background-color: #1161a0;
   padding: 10px;
+}
+.test-1 {
+  background-color: blueviolet;
 }
 .datos_contacto {
   display: flex;
