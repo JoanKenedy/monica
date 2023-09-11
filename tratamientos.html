@@ -12,10 +12,136 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="aos/aos.css" />
+    <!-- Demo styles -->
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .container-slider-azul {
+        width: 90%;
+        margin: auto;
+      }
+      .card_nosotros {
+        border-radius: 20px;
+        background-color: #002c89;
+        position: relative;
+        border: 2px solid #002c89;
+        padding: 7px;
+      }
+
+      .card_nosotros::before {
+        content: " ";
+        position: absolute;
+        height: 45%;
+        width: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 30px;
+      }
+      .card_nosotros .image {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: transparent;
+      }
+      .card_nosotros .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .card_nosotros .media-icons {
+        position: absolute;
+        top: 10px;
+        right: -20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .card_nosotros .media-icons i {
+        color: #002c89;
+        margin: 7px 20px 0px 0px;
+        font-size: 25px;
+      }
+      .card_nosotros .media-icons i:hover {
+        color: #1161a0;
+      }
+      .name-profesion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        color: #fff;
+      }
+      .name-profesion ul {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+      }
+      .name-profesion ul li {
+        padding: 7px 0px;
+      }
+      .name-profesion .profesion {
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .rating {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        justify-content: space-between;
+      }
+      .rating i {
+        color: #feee00;
+      }
+      .btn_conoce {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .btn_conoce a {
+        background-color: #fff;
+        padding: 15px 25px;
+        color: #002c89;
+        border: none;
+        border-radius: 20px;
+        font-size: 15px;
+        text-decoration: none;
+      }
+    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -159,23 +285,197 @@
       <img src="imagenes/parallax_tratamientos.png" alt="" />
       <div class="section_texto">
         <p>
-          Nosotros 
+          Tratamientos 
       
         </p>
       </div>
     </section>
 
-    <section class="parallax_tratamientos_dos">
-      <p>
-        Somos una empresa comprometida en brindar calidad al paciente en sus
-        tratamientos dentales, proporcionándoles confianza <br />
-        con más de 20 años de experiencia en todas las especialidades,
-        manteniéndonos actualizados para ofrecer servicios innovadores
-      </p>
+    <section class="doctores">
+      <h2>Tratamientos</h2>
+      <div class="container-slider-azul">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card_nosotros">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imagenes/enfermedad_peridontal.png" alt="" />
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="name-profesion">
+                  <ul>
+                    <li>Ortodoncia invisible con Brackets de Zafiro</li>
+                    <li>Ortodoncia metálica</li>
+                    <li>Alineadores invisibles</li>
+                  </ul>
+                </div>
+
+                <div class="btn_conoce">
+                  <a
+                    href="tratamientos.html"
+                    class="conoce_de_mi"
+                    id="conoceUno"
+                    >Conoce más
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card_nosotros">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imagenes/implentes_nuevo.png" alt="" />
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="name-profesion">
+                  <ul>
+                    <li>Cirugía de Implantes Dentales</li>
+                    <li>Rehabilitación de Implantes dentales</li>
+                    <li>Elevación de Seño Paranasal</li>
+                  </ul>
+                </div>
+
+                <div class="btn_conoce">
+                  <a
+                    href="tratamientos.html"
+                    class="conoce_de_mi"
+                    id="conoceDos"
+                    >Conoce más
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card_nosotros">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imagenes/diseno_sonrisa.png" alt="" />
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="name-profesion">
+                  <ul>
+                    <li>Recontorneo Estético de la Encía</li>
+                    <li>Carillas</li>
+                    <li>Blanqueamiento Dental</li>
+                  </ul>
+                </div>
+
+                <div class="btn_conoce">
+                  <a
+                    href="tratamientos.html"
+                    class="conoce_de_mi"
+                    id="conoceTres"
+                    >Conoce más
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card_nosotros">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imagenes/enfermedad_peridontal.png" alt="" />
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="name-profesion">
+                  <ul>
+                    <li>Ortodoncia invisible con Brackets de Zafiro</li>
+                    <li>Ortodoncia metálica</li>
+                    <li>Alineadores invisibles</li>
+                  </ul>
+                </div>
+
+                <div class="btn_conoce">
+                  <a
+                    href="tratamientos.html"
+                    class="conoce_de_mi"
+                    id="conoceUno"
+                    >Conoce más
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card_nosotros">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imagenes/implentes_nuevo.png" alt="" />
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="name-profesion">
+                  <ul>
+                    <li>Cirugía de Implantes Dentales</li>
+                    <li>Rehabilitación de Implantes dentales</li>
+                    <li>Elevación de Seño Paranasal</li>
+                  </ul>
+                </div>
+
+                <div class="btn_conoce">
+                  <a
+                    href="tratamientos.html"
+                    class="conoce_de_mi"
+                    id="conoceDos"
+                    >Conoce más
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card_nosotros">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imagenes/diseno_sonrisa.png" alt="" />
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-tiktok"></i>
+                </div>
+                <div class="name-profesion">
+                  <ul>
+                    <li>Recontorneo Estético de la Encía</li>
+                    <li>Carillas</li>
+                    <li>Blanqueamiento Dental</li>
+                  </ul>
+                </div>
+
+                <div class="btn_conoce">
+                  <a
+                    href="tratamientos.html"
+                    class="conoce_de_mi"
+                    id="conoceTres"
+                    >Conoce más
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- Swiper JS -->
     </section>
 
     <div class="container-slider">
-      <h2>Casos clínicos</h2>
+      <h2 class="casos-">Casos clínicos</h2>
       <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -377,30 +677,67 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 10,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
+          640: {
+            slidesPerView: 2,
             spaceBetween: 20,
           },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-          },
-          // when window width is >= 640px
-          640: {
+          768: {
             slidesPerView: 3,
             spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
           },
         },
       });
