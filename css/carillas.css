@@ -94,6 +94,12 @@ body {
 .promo {
   display: none;
 }
+.item_testimonios a {
+  padding: 10px 5px;
+  background-color: #781658;
+  color: white;
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .promo-mov {
     display: none;
@@ -122,5 +128,11 @@ body {
     grid-template-columns: repeat(2, 
     minmax(200px, 450px));
     gap: 20px;
+  }
+  .item_testimonios a {
+    padding: 10px 5px;
+    background-color: #781658;
+    color: white;
+    text-decoration: none;
   }
 }
