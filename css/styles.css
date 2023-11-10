@@ -1576,7 +1576,119 @@ footer {
 .img_fondo:nth-child(2) img {
   max-width: 80%;
 }
+/*EStilos pormociones modal*/
+.modal-promos {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
 
+  min-height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0);
+  transition: 0.7s;
+  transform-origin: top;
+  overflow-x: hidden;
+}
+.modal-show {
+  transform: scale(1);
+  transition: 0.7s;
+}
+.modal-promos i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+.modal-promos h2 {
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 30px;
+}
+.modal-promos h5 {
+  font-size: 1em;
+}
+.modal-promos p {
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container-modal-promos {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 250px));
+  gap: 5px;
+  margin: 20px 0;
+  text-align: center;
+  justify-content: center;
+}
+.img-modal {
+  max-width: 100%;
+}
+.modal-promos a {
+  display: block;
+  margin: 5px auto 10px;
+  background-color: #781658;
+  color: #fff;
+  text-align: center;
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 10px 2px;
+  transition: 0.7s;
+  font-size: 1.1em;
+}
+@media (min-width: 768px) {
+  .modal-promos i {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 25px;
+    color: #fff;
+  }
+  .modal-promos h2 {
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  .modal-promos p {
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .container-modal-promos {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+  }
+  .img-modal {
+    max-width: 100%;
+  }
+  .modal-promos a {
+    display: block;
+    margin: 10px auto 10px auto;
+    background-color: #781658;
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 10px 2px;
+    transition: 0.7s;
+    font-size: 1.3em;
+  }
+}
+/*Fin promociones modal*/
 @media (max-width: 1099px) {
   .parallax_uno p {
     font-size: 20px;
