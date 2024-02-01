@@ -735,12 +735,13 @@ nav i {
 .contenedor_marcas {
   width: 85%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(350px, 400px));
   text-align: center;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   gap: 20px;
+  place-content: center;
 }
 .item_marcas img {
   max-width: 100%;
