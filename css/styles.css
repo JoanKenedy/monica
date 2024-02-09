@@ -735,7 +735,7 @@ nav i {
 .contenedor_marcas {
   width: 85%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(350px, 400px));
+  grid-template-columns: repeat(3, minmax(350px, 400px));
   text-align: center;
   margin: auto;
   padding-top: 20px;
@@ -1639,7 +1639,7 @@ footer {
 .modal-promos a {
   display: block;
   margin: 5px auto 10px;
-  background-color: rgb(210, 179, 0);
+  background-color: rgb(210, 0, 0);
   color: #fff;
   text-align: center;
   padding: 7px;
@@ -1686,7 +1686,7 @@ footer {
   .modal-promos a {
     display: block;
     margin: 10px auto 10px auto;
-    background-color: rgb(210, 179, 0);
+    background-color: rgb(210, 0, 0);
     color: #fff;
     text-align: center;
     padding: 7px;
