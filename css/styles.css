@@ -1653,6 +1653,25 @@ footer {
   transform: scale(1.1);
   transition: all 0.275s linear;
 }
+.caja-iframe {
+  height: 700px;
+}
+.caja-iframe iframe {
+  height: 700px;
+  width: 100%;
+}
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+.modal-footer button {
+  background-color: #05a6e1;
+  border: none;
+  width: 150px;
+  padding: 7px;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .modal-promos i {
     position: absolute;
@@ -1713,6 +1732,13 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .caja-iframe {
+    height: 420px;
+  }
+  .caja-iframe iframe {
+    height: 390px;
+    width: 100%;
+  }
   .btn-compu {
     display: none !important;
   }
@@ -2608,7 +2634,7 @@ footer {
   .menu {
     top: 55px;
   }
-  .mobile{
+  .mobile {
     height: 100%;
   }
   .contenido_post p {
