@@ -4,6 +4,9 @@
 
   
 }
+.container-slider {
+    padding: 0 60px;
+}
 .parallax_tratamientos img{
     max-width: 100%;
 }
@@ -92,6 +95,9 @@
 .card_image_dos:hover::before{
     width: 100%;
     left: 0;
+}
+.casos- {
+    font-size: 40px;
 }
 .item_card_dos:hover{
     transform: scale(0.9);
@@ -256,7 +262,9 @@
         color: #1161a0;
         font-size: 22px;
     }
-    
+    .container-slider {
+        padding: 0 2em;
+    }
 }
 @media (max-width:380px){
     .parallax_tratamientos{

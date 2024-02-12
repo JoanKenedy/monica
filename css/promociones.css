@@ -23,9 +23,11 @@
   width: 90%;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 
+  minmax(300px, 400px));
   margin: auto;
-  grid-gap: 20px;
+  grid-gap: 40px;
+  justify-content: center;
 }
 .item_promocion img {
   max-width: 100%;
