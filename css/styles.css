@@ -735,7 +735,7 @@ nav i {
 .contenedor_marcas {
   width: 85%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(350px, 400px));
+  grid-template-columns: repeat(4, minmax(350px, 400px));
   text-align: center;
   margin: auto;
   padding-top: 20px;
