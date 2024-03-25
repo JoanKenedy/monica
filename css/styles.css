@@ -339,7 +339,6 @@ nav i {
   overflow: hidden;
   /*margin: auto;*/
   margin: 70px auto 0px auto;
-  background-image: url(../imagenes/fondoatras.png);
   background-size: cover;
   z-index: 1;
   top: auto;
@@ -702,7 +701,7 @@ nav i {
   font-size: 22px;
 }
 .parallax_uno {
-  background-image: url(../imagenes/parallax.png);
+  background-image: url(../imagenes/parallax.webp);
   background-position: center;
   width: 100%;
   height: 400px;
@@ -1738,7 +1737,6 @@ footer {
     overflow: hidden;
     /*margin: auto;*/
     margin: 55px auto 0px auto;
-    background-image: url(../imagenes/fondoatras.png);
     background-size: cover;
     z-index: 1;
     top: auto;
