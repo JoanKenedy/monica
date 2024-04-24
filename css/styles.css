@@ -157,7 +157,7 @@ nav i {
 }
 
 .contacto {
-  background-color: #05a6e1;
+  background-color: #005e81;
   width: 350px;
   padding: 12px 30px 12px 40px;
   position: fixed;
@@ -168,10 +168,7 @@ nav i {
   z-index: 1;
   text-align: left;
   cursor: pointer;
-  animation: crecer;
-  animation-duration: 5s;
-
-  animation-iteration-count: 5;
+  animation: crecer 5s infinite;
   transform-origin: right;
 }
 .menu_redes {
@@ -194,8 +191,11 @@ nav i {
     transform: scaleX(0);
   }
 
-  100% {
+  50% {
     transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
   }
 }
 .contact_uno {
@@ -620,10 +620,11 @@ nav i {
     opacity: 1;
   }
 }
-.card_body h4 {
+.card_body span {
   color: #781658;
   font-size: 18px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .servicios {
@@ -1103,6 +1104,8 @@ footer {
   list-style: none;
   text-align: left;
   padding: 10px 0px;
+  color: #fff;
+  font-size: 17px;
 }
 .item_footer:nth-child(1) ul li a {
   text-decoration: none;
@@ -1508,12 +1511,17 @@ footer {
   align-items: center;
   margin: 30px auto;
 }
-.item_testimonios:nth-child(2) h5 {
+.item_testimonios span {
   color: #fff;
   font-size: 22px;
   margin: 10px auto;
 }
-.item_testimonios:nth-child(2) h6 {
+.item_testimonios:nth-child(2) span {
+  color: #fff;
+  font-size: 22px;
+  margin: 10px auto;
+}
+.item_testimonios:nth-child(2) span {
   font-size: 22px;
   text-align: center;
 }
@@ -1855,7 +1863,7 @@ footer {
     text-align: center;
   }
   .contacto {
-    background-color: #05a6e1;
+    background-color: #005e81;
     width: 250px;
     padding: 12px 20px 12px 20px;
     position: fixed;
@@ -2592,7 +2600,7 @@ footer {
     font-size: 14px;
   }
   .contacto {
-    background-color: #05a6e1;
+    background-color: #005e81;
     width: 300px;
     padding: 12px 30px 12px 40px;
     position: fixed;
@@ -2838,7 +2846,7 @@ footer {
     font-weight: 700;
   }
   .contacto {
-    background-color: #05a6e1;
+    background-color: #005e81;
     width: 270px;
     padding: 10px 30px 10px 40px;
     position: fixed;
