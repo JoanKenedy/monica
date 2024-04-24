@@ -1,5 +1,5 @@
 const modal = document.getElementById("modalPromo");
-const cerrar = document.getElementById('modalPromo')
+const cerrar = document.getElementById("modalPromo");
 
 window.addEventListener("load", function (event) {
   const time = setTimeout(myModal, 2000);
