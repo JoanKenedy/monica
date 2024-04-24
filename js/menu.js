@@ -13,11 +13,11 @@ btnContacto.addEventListener("click", function () {
   contacto.style.display = "none";
 });
 
-const modalInicio = document.querySelector(".modal_inicio");
-const closeModal = document.querySelector(".close");
-window.addEventListener("load", () => {
-  modalInicio.classList.add("aparecer_modal");
-});
-closeModal.addEventListener("click", () => {
-  modalInicio.classList.remove("aparecer_modal");
-});
+// const modalInicio = document.querySelector(".modal_inicio");
+// const closeModal = document.querySelector(".close");
+// window.addEventListener("load", () => {
+//   modalInicio.classList.add("aparecer_modal");
+// });
+// closeModal.addEventListener("click", () => {
+//   modalInicio.classList.remove("aparecer_modal");
+// });
