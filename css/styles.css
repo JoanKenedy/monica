@@ -1647,7 +1647,7 @@ footer {
 .modal-promos a {
   display: block;
   margin: 5px auto 10px;
-  background-color: rgb(210, 0, 0);
+  background-color: #06b8b8;
   color: #fff;
   text-align: center;
   padding: 7px;
@@ -1702,7 +1702,7 @@ footer {
   .container-modal-promos {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-columns: repeat(1, minmax(300px, 400px));
     gap: 10px;
     margin: 20px;
     justify-content: center;
@@ -1713,7 +1713,7 @@ footer {
   .modal-promos a {
     display: block;
     margin: 10px auto 10px auto;
-    background-color: rgb(210, 0, 0);
+    background-color: #06b8b8;
     color: #fff;
     text-align: center;
     padding: 7px;

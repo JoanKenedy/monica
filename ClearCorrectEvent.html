@@ -19,6 +19,10 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://clinicadentalorthodentic.com/ClearCorrectEvent" />
 		<meta property="og:image" content="https://clinicadentalorthodentic.com/imagenes/banner-clearcorrect.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
     <title>ClearCorrect | Clínica Dental Orthodentic</title>
     <link
       rel="icon"
@@ -172,15 +176,68 @@
         <i class="fas fa-bars abrirmenu"></i>
       </nav>
     </header>
-    <section class="container-main">
+    <main class="container-main">
       <video src="video/bg-video.mp4" class="video-bg-hero" muted autoplay loop></video>
-      <article class="container-max-7xl">
-        
+      <section class="bg-blue-text linear-gradient-bg-blue container-main">
+        <div class="container-max-7xl">
+          <div class="container-text">
+            <span>¿Quieres alinear tus dientes?</span>
+            <h1>Evento exclusivo</h1>
+            <p>Asiste a nuestro evento especial y aprovecha la oportunidad de realizar un escaneo digital gratuito. Descubre cómo nuestros tratamientos personalizados pueden ayudarte a obtener la sonrisa que siempre has deseado. Nuestro equipo de expertos estará disponible para responder todas tus preguntas y guiarte en cada paso del proceso. ¡No te lo pierdas!</p>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Confirma tu asistencia</a>
+          </div>
+          <img src="imagenes/pre-banner.jpeg" alt="" style="max-width: 400px;">
+        </div>
+      </section>
+      <section class="container-grid-max-7xl">
+        <div class="text-event">
+          <h2>Evento exclusivo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, assumenda accusantium minima est excepturi dolore cumque, maiores sint nemo exercitationem officia odio autem reprehenderit qui recusandae eum iste dolorum quam?</p>
+        </div>
+        <img src="imagenes/clearcorrect/align-1.webp" alt="">
+        <img src="imagenes/nuevasFotos/INTALACIONES/DSC_4935.webp" alt="">
+        <img src="imagenes/nuevasFotos/DSC_5012.webp" alt="">
+      </section>
+      <div class="container-main bg-blue-text" style="padding: 1rem;">
+        <section class="countdown-border container-main">
+          <span>Sólo faltan:</span>
+          <div class='container-countdown container-flex-7xl '>
+            <div class='item-countdown'>
+              <span id="timer">{days}</span>
+              <span>Días</span>
+            </div>
+            <div class='item-countdown'>
+              <span id="timer">{hours}</span>
+              <span>Horas</span>
+            </div>
+            <div class='item-countdown'>
+              <span id="timer">{minutes}</span>
+              <span>Minutos</span>
+            </div>
+            <div class='item-countdown'>
+              <span id="timer">{seconds}</span>
+              <span>Segundos</span>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-    <section>
-      <h1>Evento exclusivo</h1>
-    </section>
+      <section class="container-max-7xl" style="margin: 40px 0;">
+        <img src="imagenes/nuevasFotos/INTALACIONES/DSC_4935.webp" alt="">
+        <div class="container-text text-bg-white">
+          <span>Confirma</span>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis consequuntur animi quibusdam facere optio velit consequatur magni amet vitae architecto a ab, maiores sint natus pariatur esse nisi atque odio.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>Aviso de privacidad</span>
+      <p>Copyright <span id="anio"></span> Clínica Dental Orthodentic</p>
+    </footer>
+    <a href="https://api.whatsapp.com/send?phone=528115383937&text=Quiero confirmar mi asistencia al evento" target="_blank" rel="noopener noreferrer" class="btn-fixed">
+      <img src="imagenes/clearcorrect/whatsapp.png" alt="Logo de WhatsApp">
+    </a>
+    <script src="js/year.js"></script>
+    <script src="js/countdown.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>
