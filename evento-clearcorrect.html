@@ -127,7 +127,7 @@
         </li>
         <li>
           <a href="contacto.html" data-section="home" data-value="ancla_cinco">Contacto</a>
-        </li>
+          </li>
         <li id="flags" class="flags">
           <div class="flags_item" data-language="es" id="es">
             <a href="index.html" aria-label="Cambiar idioma a español"><img src="imagenes/mexico.png"
@@ -143,34 +143,7 @@
     </nav>
   </header>
   <main class="container-main">
-    <img src="imagenes/clearcorrect/banner-vertical.webp" alt="Banner del evento" class="banner-event">
-    <img src="imagenes/clearcorrect/banner-horizontal.webp" alt="Banner del evento de clearcorrect" class="banner-event-desktop">
-    <section class="bg-blue-text linear-gradient-bg-blue container-main">
-      <div class="container-max-7xl">
-        <div class="container-text">
-          <span>¿Quieres alinear tus dientes?</span>
-          <h1>Evento exclusivo</h1>
-          <p>Asiste a nuestro evento especial y aprovecha la oportunidad de realizar un escaneo digital. Descubre cómo
-            nuestros tratamientos personalizados pueden ayudarte a obtener la sonrisa que siempre has deseado. Nuestro
-            equipo de expertos estará disponible para responder todas tus preguntas y guiarte en cada paso del proceso.
-            <br> <strong>¡No te lo pierdas!</strong>
-          </p>
-          <a href="https://api.whatsapp.com/send?phone=52811538393" target="_blank" rel="noopener noreferrer">Confirma tu asistencia</a>
-        </div>
-        <img src="imagenes/pre-banner.jpeg" alt="" style="max-width: 400px;">
-      </div>
-    </section>
-    <section class="container-grid-max-7xl">
-      <div class="text-event">
-        <h2>Disfruta Premios</h2>
-        <p>En el emocionante evento, los participantes tendrán la oportunidad de ganar increíbles premios, entre los que
-          se incluyen tratamientos de blanqueamiento dental y limpiezas dentales completamente gratuitas. ¡Es una
-          oportunidad única para mejorar tu salud bucal y lucir una sonrisa radiante!</p>
-      </div>
-      <img src="imagenes/clearcorrect/event-2.webp" class="img-event" alt="">
-      <video src="video/video-clear.mp4" class="video-clear" controls autoplay muted></video>
-    </section>
-    <div class="container-main bg-blue-text" style="padding: 1rem;">
+    <div class="container-main bg-blue-text countdown-mt" style="padding: 1rem;">
       <section class="countdown-border container-main">
         <span>Sólo faltan:</span>
         <div class='container-countdown container-flex-7xl '>
@@ -193,6 +166,33 @@
         </div>
       </section>
     </div>
+    <img src="imagenes/clearcorrect/banner-vertical.webp" alt="Banner del evento" class="banner-event">
+    <img src="imagenes/clearcorrect/banner-horizontal.webp" alt="Banner del evento de clearcorrect" class="banner-event-desktop">
+    <section class="bg-blue-text linear-gradient-bg-blue container-main">
+      <div class="container-max-7xl">
+        <div class="container-text">
+          <span>¿Quieres alinear tus dientes?</span>
+          <h1>Evento exclusivo</h1>
+          <p>Asiste a nuestro evento especial y aprovecha la oportunidad de realizar un escaneo digital. Descubre cómo
+            nuestros tratamientos personalizados pueden ayudarte a obtener la sonrisa que siempre has deseado. Nuestro
+            equipo de expertos estará disponible para responder todas tus preguntas y guiarte en cada paso del proceso.
+            <br> <strong>¡No te lo pierdas!</strong>
+          </p>
+          <button id="btn-more-info">¿Qué es clearcorrect?</button>
+        </div>
+        <img src="imagenes/pre-banner.jpeg" alt="" style="max-width: 400px;">
+      </div>
+    </section>
+    <section class="container-grid-max-7xl">
+      <div class="text-event">
+        <h2>Disfruta Premios</h2>
+        <p>En el emocionante evento, los participantes tendrán la oportunidad de ganar increíbles premios, entre los que
+          se incluyen tratamientos de blanqueamiento dental y limpiezas dentales completamente gratuitas. ¡Es una
+          oportunidad única para mejorar tu salud bucal y lucir una sonrisa radiante!</p>
+      </div>
+      <img src="imagenes/clearcorrect/event-2.webp" class="img-event" alt="">
+      <video src="video/video-clear.mp4" class="video-clear" controls autoplay muted></video>
+    </section>
     <section class="container-max-7xl" style="margin: 40px 0;">
       <img src="imagenes/nuevasFotos/INTALACIONES/DSC_4935.webp" alt="">
       <div class="container-text text-bg-white">
@@ -204,6 +204,20 @@
       </div>
     </section>
   </main>
+  <div class="modal-promos" id="modalPromo" style="background-color: #06b8b8ce;">
+    <i class="fa-solid fa-xmark" id="close" style="color: #1d1d1d !important;"></i>
+    <h2 style="color: #1d1d1d !important;">Conoce más sobre los alineadores clearcorrect</h2>
+
+    <div class="container-modal-promos">
+
+    </div>
+      <a
+        style="background-color: #1d1d1d;"
+        href="https://api.whatsapp.com/send?phone=528115383937"
+        target="_blank"
+        >Agendar Cita</a
+      >
+  </div>
   <footer class="footer">
     <span>Aviso de privacidad</span>
     <p>Copyright <span id="anio"></span> Clínica Dental Orthodentic</p>
@@ -215,6 +229,7 @@
   <script src="confetti-js-master/dist/index.min.js"></script>
   <script src="js/confetti.js"></script>
   <script src="js/year.js"></script>
+  <script src="js/modal2.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/menu.js"></script>
 </body>
