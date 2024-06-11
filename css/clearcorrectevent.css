@@ -54,6 +54,43 @@ img {
   padding-top: 50px;
   margin-top: -35px;
 }
+.modal-promos {
+  height: 100%;
+  overflow-y: auto;
+  display: grid;
+  place-items: center;
+  padding-bottom: 25px;
+}
+.container-modal-promos {
+  width: 100%;
+  display: inline-block;
+  padding: 0 1rem;
+}
+.container-modal-promos details {
+  width: 100%;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+  max-width: 648px;
+}
+
+.container-modal-promos details p {
+  color: #1d1d1d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container-modal-promos ul {
+  list-style-position: outside;
+  margin-top: 15px;
+  padding-left: 20px;
+  text-align: start;
+  display: grid;
+  font-weight: 500;
+  gap: 5px;
+}
 
 .container-text button {
   border: none;
