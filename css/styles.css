@@ -310,6 +310,7 @@ nav i {
   z-index: 5;
   animation: pulse 2s infinite;
   border-radius: 50%;
+  width: 7rem;
 }
 
 @keyframes pulse {
