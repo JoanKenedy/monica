@@ -33,7 +33,6 @@ img {
 
 .banner-event-desktop {
   display: none;
-  aspect-ratio: 16/9;
   width: 100%;
 }
 
@@ -73,7 +72,11 @@ img {
   width: 30%;
   margin: 10px;
 }
-
+@media screen and (max-width: 768px) {
+    .banner-event {
+        display: none; /* Ocultar la imagen en dispositivos con ancho de pantalla menor o igual a 768px */
+    }
+}
 @media screen and (max-width: 768px) {
   .videos-container video {
       width: 45%;
@@ -282,6 +285,7 @@ img {
     margin-top: 59px;
   }
   .banner-event-desktop {
+    margin-top: 3rem;
     width: 100%;
     object-fit: cover;
     display: block;
