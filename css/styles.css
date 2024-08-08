@@ -22,8 +22,8 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  left: -100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
   height: 100vh;
   display: flex;
@@ -31,16 +31,90 @@ body {
   justify-content: center;
   align-items: center;
   transition: 1s;
+  transform: scale(0);
+}
+.slide_contenedor_2 {
+  max-width: 100%;
+  max-height: 90vh;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  /*margin: auto;*/
+  margin: 10px auto 0px auto;
+  background-size: cover;
+  z-index: 1;
+  top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.modal_inicio i {
-  color: #fff;
-  font-size: 50px;
+.miSlider_2 {
+  position: relative;
+}
+
+.miSlider_2 img {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 60%;
+  height: inherit;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  z-index: 1;
+}
+
+.container-modal {
+  width: 80%;
+  margin: auto;
+}
+.container-modal h2 {
+  color: white;
+  font-size: 30px;
+}
+.container-modal a {
+  display: block;
+  margin: 15px auto;
+  background-color: #781658;
+  width: 250px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 9px 7px;
+}
+
+.barras_2 {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  bottom: -0;
+  left: 0%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+.barra_2 {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: #444444;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.active_2 {
+  background-color: #005e81;
 
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .flags {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -55,15 +129,6 @@ body {
 .aparecer_modal {
   left: 0;
   transition: 1s;
-}
-
-.modal_inicio h3 {
-  color: #fff;
-  text-align: center;
-  font-size: 50px;
-  text-shadow: 0 0 15px #0000c6, 0 0 15px #0000c6, 0 0 15px #0000c6;
-  animation: parpadear 2s infinite steps(3);
-  margin-bottom: 20px;
 }
 
 .container_video iframe:hover {
@@ -2062,7 +2127,24 @@ footer {
   .caja-iframe {
     height: 420px;
   }
+  .container-modal {
+    width: 90%;
+    margin: auto;
+  }
 
+  .miSlider_2 img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+    height: inherit;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    z-index: 1;
+  }
   .caja-iframe iframe {
     height: 390px;
     width: 100%;

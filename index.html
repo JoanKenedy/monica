@@ -244,9 +244,40 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         font-size: 15px;
         text-decoration: none;
       }
+
     </style>
   </head>
   <body>
+    <div class="modal_inicio" id="modalPromo">
+      <div class="container-modal">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <h2>Promoción de alineadores invisibles</h2>
+           <div class="slide_contenedor_2">
+      <div class="miSlider_2 fade">
+        <img src="imagenes/promo-1-clear.png"
+          alt="Foto grupal de todo el equipo Orthodentic" class="img-modal-inicio" />
+      </div>
+      <div class="miSlider_2 fade">
+        <img src="imagenes/promo-2-clear.png"
+          alt="Foto grupal de todo el equipo Orthodentic" class="img-modal-inicio" />
+      </div>
+
+      <div class="miSlider_2 fade">
+        <img src="imagenes/promo-3-clear.png"
+          alt="Foto grupal de todo el equipo Orthodentic" class="img-modal-inicio" />
+      </div>
+
+      <div class="barras_2">
+        <span class="barra_2 active2" onclick="posicionSlide(1)"></span>
+        <span class="barra_2" onclick="posicionSlide(2)"></span>
+        <span class="barra_2" onclick="posicionSlide(3)"></span>
+       
+      </div>
+    </div>
+       <a href="/evento-clearcorrect.html">Más información</a>
+       
+      </div>
+    </div>
     <header>
       <nav>
         <img src="imagenes/logo_ortodenthic.png"
@@ -604,8 +635,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         data-value="img_dos">
 
         <img src="imagenes/promociones/promo-6.webp" alt="Promociones" />
-
-        <a href="promociones.html">Ver más promociones</a>
+        <a href="/evento-clearcorrect.html">Alineadores</a>
+        
       </div>
         <div
           class="item_marcas"
@@ -616,6 +647,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
           <img src="imagenes/promociones/promo-3.webp" alt="Promociones" />
 
+          <a href="/evento-clearcorrect.html">Alineadores</a>
           <a href="promociones.html">Ver más promociones</a>
         </div>
 
@@ -1155,6 +1187,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       AOS.init();
     </script>
     <script src="js/modal.js"></script>
+     <script src="js/slider-modal.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/swiper-testimonios.js"></script>
@@ -1188,6 +1221,25 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             spaceBetween: 50,
           },
         },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper-3", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+     
       });
     </script>
   </body>
